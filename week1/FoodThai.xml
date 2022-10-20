@@ -4,4 +4,9 @@
       <FoodName>ก๋วยเตี๋ยว</FoodName>
       <Price>99 บาท</Price>
     </ThaiFood>
+    <ThaiFood>
+      <FoodID>0012</FoodID>
+      <FoodName>ก๋วยเตี๋ยว</FoodName>
+      <Price>99 บาท</Price>
+    </ThaiFood>
 </Food>
