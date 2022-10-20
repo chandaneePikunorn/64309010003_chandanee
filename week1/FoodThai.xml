@@ -9,7 +9,7 @@
       <FoodName>ปลาทอด ราดพริกสามรส</FoodName>
       <Price>299 บาท</Price>
     </ThaiFood>
-        <ThaiFood>
+    <ThaiFood>
       <FoodID>003</FoodID>
       <FoodName> กุ้งอบวุ้นเส้น</FoodName>
       <Price>199 บาท</Price>
@@ -18,5 +18,33 @@
       <FoodID>004</FoodID>
       <FoodName> ต้มยำทะเล</FoodName>
       <Price>98 บาท</Price>
+    </ThaiFood>
+    <FoodID>005</FoodID>
+      <FoodName> ต้มข่าไก่</FoodName>
+      <Price>100 บาท</Price>
+    </ThaiFood> 
+    <FoodID>006</FoodID>
+      <FoodName>ปลากระพงทอดน้ำปลา</FoodName>
+      <Price>198 บาท</Price>
+    </ThaiFood>   
+    <FoodID>007</FoodID>
+      <FoodName>ปลาทูผัดพริกเกลือ</FoodName>
+      <Price>120บาท</Price>
+    </ThaiFood>
+    <FoodID>008</FoodID>
+      <FoodName>ข้าวมันไก่</FoodName>
+      <Price>45บาท</Price>
+    </ThaiFood>
+    <FoodID>009</FoodID>
+      <FoodName>กุ้งทอดเกลือ</FoodName>
+      <Price>199บาท</Price>
+    </ThaiFood>
+    <FoodID>010</FoodID>
+      <FoodName>น้ำพริกปลาทู ป่นปลาทู</FoodName>
+      <Price>129บาท</Price>
+    </ThaiFood>
+    <FoodID>011</FoodID>
+      <FoodName>แกงส้มแป๊ะซะ</FoodName>
+      <Price>159บาท</Price>
     </ThaiFood>
 </Food>
