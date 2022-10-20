@@ -1,12 +1,22 @@
 <Food>
    <ThaiFood>
-      <FoodID>0012</FoodID>
+      <FoodID>001</FoodID>
       <FoodName>ก๋วยเตี๋ยว</FoodName>
       <Price>99 บาท</Price>
     </ThaiFood>
     <ThaiFood>
-      <FoodID>0012</FoodID>
-      <FoodName>ก๋วยเตี๋ยว</FoodName>
-      <Price>99 บาท</Price>
+      <FoodID>002</FoodID>
+      <FoodName>ปลาทอด ราดพริกสามรส</FoodName>
+      <Price>299 บาท</Price>
+    </ThaiFood>
+        <ThaiFood>
+      <FoodID>003</FoodID>
+      <FoodName> กุ้งอบวุ้นเส้น</FoodName>
+      <Price>199 บาท</Price>
+    </ThaiFood>
+    <ThaiFood>
+      <FoodID>004</FoodID>
+      <FoodName> ต้มยำทะเล</FoodName>
+      <Price>98 บาท</Price>
     </ThaiFood>
 </Food>
