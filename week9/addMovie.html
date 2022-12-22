@@ -37,7 +37,7 @@
 
                 <div class="col-6">
                     <label for="" class="form-label">Picture</label>
-                    <input type="file" name="" class="form-control" id="picture">
+                    <input type="text" name="" class="form-control" id="picture">
                 </div>
                 <div class="col-6">
                     <label for="" class="form-label">Trailer</label>
@@ -68,8 +68,39 @@
                     <input type="number" name="" class="form-control" id="graphics">
                 </div>
             </div>
-        </form>
+            <div class="row">
+                <div class="col">
+                    <input class="btn btn-primary" onclick="addMovie()" type="button" value="AddMovie">
+                </div>
+            </div>
     </div>
+    </form>
+    </div>
+
+    <script>
+        function addMovie() {
+            let obj = {
+            "movieName": document.forms['myform']['movieName'].value,
+            "movieLength": document.forms['myform']['movieLength'].value,
+            "director": document.forms['myform']['director'].value,
+            "category": document.forms['myform']['category'].value,
+            "picture": document.forms['myform']['picture'].value,
+            "trailer": document.forms['myform']['trailer'].value,
+            "review": {
+            "review": document.forms['myform']['review'].value,
+            "score": {
+            "screenPlay": document.forms['myform']['screenPlay'].value,
+            "playing": document.forms['myform']['playing'].value,
+            "music": document.forms['myform']['music'].value,
+            "actorSkills": document.forms['myform']['actorSkills'].value,
+            "graphics": document.forms['myform']['graphics'].value,
+            "average": null
+                    }
+                }
+            }
+            console.log(obj);
+        }
+    </script>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
