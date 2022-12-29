@@ -49,66 +49,64 @@
                 </div>
                 <div class="col">
                     <label for="" class="form-label">ScreenPlay</label>
-                    <input type="number" name="" class="form-control" id="screenPlay">
+                    <input type="number" min="0" max="10" name="" class="form-control" id="screenPlay"
+                        placeholder="0-10">
                 </div>
                 <div class="col">
                     <label for="" class="form-label">Playing</label>
-                    <input type="number" name="" class="form-control" id="playing">
+                    <input type="number" min="0" max="10" name="" class="form-control" id="playing" placeholder="0-10">
                 </div>
                 <div class="col">
                     <label for="" class="form-label">music</label>
-                    <input type="number" name="" class="form-control" id="music">
+                    <input type="number" min="0" max="10" name="" class="form-control" id="music" placeholder="0-10">
                 </div>
                 <div class="col">
                     <label for="" class="form-label">actorSkills</label>
-                    <input type="number" name="" class="form-control" id="actorSkills">
+                    <input type="number" min="0" max="10" name="" class="form-control" id="actorSkills"
+                        placeholder="0-10">
                 </div>
                 <div class="col ">
                     <label for="" class="form-label">graphics</label>
-                    <input type="number" name="" class="form-control" id="graphics">
+                    <input type="number" min="0" max="10" name="" class="form-control" id="graphics" placeholder="0-10">
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <input class="btn btn-primary" onclick="addMovie()" type="button" value="AddMovie">
-                </div>
-            </div>
-    </div>
-    </form>
-    </div>
 
+                <div class="row">
+                    <div class="col">
+                        <input type="button" class="btn btn-primary" onclick="addMovie()" value="AddMovie">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
     <script>
         function addMovie() {
             let obj = {
-            "id":'',
-            "movieName": document.forms['myform']['movieName'].value,
-            "movieLength": document.forms['myform']['movieLength'].value,
-            "director": document.forms['myform']['director'].value,
-            "category": document.forms['myform']['category'].value,
-            "picture": document.forms['myform']['picture'].value,
-            "trailer": document.forms['myform']['trailer'].value,
-            "review": {
-            "review": document.forms['myform']['review'].value,
-            "score": {
-            "screenPlay": document.forms['myform']['screenPlay'].value,
-            "playing": document.forms['myform']['playing'].value,
-            "music": document.forms['myform']['music'].value,
-            "actorSkills": document.forms['myform']['actorSkills'].value,
-            "graphics": document.forms['myform']['graphics'].value,
-            "average": null
+                "id":null,
+                "movieName": document.forms['myform']['movieName'].value,
+                "movieLength": document.forms['myform']['movieLength'].value,
+                "director": document.forms['myform']['director'].value,
+                "category": document.forms['myform']['category'].value,
+                "picture": document.forms['myform']['picture'].value,
+                "trailer": document.forms['myform']['trailer'].value,
+                "review": {
+                    "review": document.forms['myform']['review'].value,
+                    "score": {
+                        "screenPlay": document.forms['myform']['screenPlay'].value,
+                        "playing": document.forms['myform']['playing'].value,
+                        "music": document.forms['myform']['music'].value,
+                        "actorSkills": document.forms['myform']['actorSkills'].value,
+                        "graphics": document.forms['myform']['graphics'].value,
+                        "average": null
                     }
                 }
             }
             console.log(obj);
             let text = JSON.stringify(obj);
-            console.log("Text",text);
-
+            console.log(text);
             let xhttp = new XMLHttpRequest();
-            xhttp.open("POST","http://localhost:3000/movieReview");
+            xhttp.open("POST", 'http://localhost:3000/movieReview');
+            xhttp.setRequestHeader('Content-Type', 'application/json');
             xhttp.send(text);
-            xhttp.setRequestHeader("Content-Type","application/json")
-            
-
         }
     </script>
 
