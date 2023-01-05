@@ -13,35 +13,35 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-weight: bold;
-      background-image:url(33.jpg) ;
-      font-family: 'Fredoka One', cursive;
-    }
+body {
+  font-weight: bold;
+  background-image:url(33.jpg) ;
+  font-family: 'Fredoka One', cursive;
+}
 
-    .btnprev {
-      margin: 20px 5px;
-      background-color: blue;
-      color: white;
-      padding: 10px;
-      float: right;
-      border: none;
-    }
+.btnprev {
+  margin: 20px 5px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  float: right;
+  border: none;
+}
 
-    .btnnext {
-      margin: 20px 5px;
-      background-color: blue;
-      color: white;
-      padding: 10px;
-      float: left;
-      border: none;
-    }
+.btnnext {
+  margin: 20px 5px;
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  float: left;
+  border: none;
+}
   </style>
 
   <title></title>
@@ -77,7 +77,7 @@
           + '</thead > '
           + '<tr>'
           + '<td>' + obj[i].id + '</td>'
-          + '<td>' + '<img src="img/' + obj[i].picture + '" width="200px"></td>'
+          + '<td>' + '<img src="' + obj[i].picture + '" width="200px"></td>'
           + '<td>' + obj[i].booktitle + '</td>'
           + '<td>' + obj[i].author + ' </td>'
           + '<td>' + obj[i].publisher + '</td>'
@@ -104,7 +104,7 @@
     }
   </script>
   <div class="row d-flex justify-content-center mb-5">
-    <a href="addblog.html" class="btn btn-primary">Add Review</a>
+    <a href="addblog.html" class="btn btn-primary">Add Book</a>
 </div>
 </div>
 
