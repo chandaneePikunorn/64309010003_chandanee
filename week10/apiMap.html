@@ -39,7 +39,7 @@ fetch('https://jirawatchk.github.io/api.json')
 
         for (i = 1; i < 78; i++) {
 
-            mapData[i] = [data[i]['CC-DESC'], data[i]['TOTAL']];
+            mapData[i] = [data[i]['CC-DESC'], parseFloat(data[i]["TOTAL"].replace(/,/g, ''))];
 
             //console.log(mapData[i]);
 
